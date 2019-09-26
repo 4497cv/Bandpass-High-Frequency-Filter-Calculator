@@ -32,7 +32,7 @@ def main():
                     print("Introduce el orden 'N' del filtro (4,6,8):")
                     N = int(input());
                     print("Introduce el ancho de banda % 'BW %' del filtro: ")
-                    BW = int(input());
+                    BW = float(input());
                     print("Introduce la frecuencia central 'f0' del filtro: ")
                     fc = int(input());
                     print("Introduce la resistencia del sistema 'R0' del filtro: ")
@@ -43,18 +43,18 @@ def main():
                     print("Introduce el orden 'N' del filtro (4,6,8):")
                     N = int(input());
                     print("Introduce el ancho de banda % 'BW %' del filtro: ")
-                    BW = int(input());
+                    BW = float(input());
                     print("Introduce la frecuencia central 'f0' del filtro: ")
                     fc = int(input());
                     print("Introduce la resistencia del sistema 'R0' del filtro: ")
                     R0 = float(input());
-                    BP_CHEBYSHEV_0_5DB_FILTER(N, BW/100, fc, R0)
+                    BP_CHEBYSHEV_0_5_DB_FILTER(N, BW/100, fc, R0)
                     valid = 1
             elif(3 == select):
                     print("Introduce el orden 'N' del filtro (4,6,8):")
                     N = int(input());
                     print("Introduce el ancho de banda % 'BW %' del filtro: ")
-                    BW = int(input());
+                    BW = float(input());
                     print("Introduce la frecuencia central 'f0' del filtro: ")
                     fc = int(input());
                     print("Introduce la resistencia del sistema 'R0' del filtro: ")

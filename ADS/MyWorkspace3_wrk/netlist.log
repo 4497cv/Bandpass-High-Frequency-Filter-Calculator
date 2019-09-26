@@ -1,0 +1,26 @@
+; Top Design: "MyLibrary3_lib:EX!:schematic"
+; Netlisted using Hierarchy Policy: "Standard"
+
+Options ResourceUsage=yes UseNutmegFormat=no EnableOptim=no TopDesignName="MyLibrary3_lib:EX!:schematic" DcopOutputNodeVoltages=yes DcopOutputPinCurrents=yes DcopOutputAllSweepPoints=no DcopOutputDcopType=0
+Port:TermG1  N__2 0 Num=1 Z=50 Ohm Noise=yes 
+Port:TermG2  N__1 0 Num=2 Z=50 Ohm Noise=yes 
+C:C1  0 N__2 C=4.537884 pF 
+C:C2  N__1 N__6 C=0.070337 pF 
+L:L1  N__2 N__6 L=22508.123758 pH Noise=yes  
+L:L2  0 N__2 L=348.872609 pH Noise=yes  
+S_Param:SP1 CalcS=yes CalcY=no CalcZ=no GroupDelayAperture=1e-4 FreqConversion=no FreqConversionPort=1 StatusLevel=2 CalcNoise=no SortNoise=0 BandwidthForNoise=1.0 Hz DevOpPtLevel=0 \
+SweepVar="freq" SweepPlan="SP1_stim" OutputPlan="SP1_Output" 
+
+SweepPlan: SP1_stim Start=3.5 GHz Stop=4.5 GHz Step=100 MHz 
+
+OutputPlan:SP1_Output \
+      Type="Output" \
+      UseEquationNestLevel=yes \
+      EquationNestLevel=2 \
+      UseSavedEquationNestLevel=yes \
+      SavedEquationNestLevel=2
+
+#load "python","LinearCollapse"
+Component Module="LinearCollapse" Type="ModelExtractor" NetworkRepresentation=2
+C:C3  0 N__1 C=3.213628 pF 
+L:L3  0 N__1 L=492.634285 pH Noise=yes  

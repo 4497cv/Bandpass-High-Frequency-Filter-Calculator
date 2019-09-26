@@ -51,11 +51,11 @@ def N2_BW(order, w0, BW, system_impedance):
     print("                |                       ")
     print("               GND                      ")
     print(" ")
-    print("C1 = %f nF" % (float(C1*1000000000)))
-    print("L1 = %f uH" % (float(L1*1000000)))
+    print("C1 = %f pF" % (float(C1*1*10**12)))
+    print("L1 = %f pH" % (float(L1*1*10**12)))
     print(" ")
-    print("C2 = %f uF" % (float(C2*1000000)))
-    print("L2 = %f uH" % (float(L2*1000000)))
+    print("C2 = %f pF" % (float(C2*1*10**12)))
+    print("L2 = %f pH" % (float(L2*1*10**12)))
     print(" ")
   
 
@@ -114,14 +114,14 @@ def N3_BW(order, w0, BW, system_impedance):
     print("                            |                        ")
     print("                           GND                       ")  
     print(" ")
-    print("C1 = %f nF" % (float(C1*1000000000)))
-    print("L1 = %f uH" % (float(L1*1000000)))
+    print("C1 = %f pF" % (float(C1*1*10**12)))
+    print("L1 = %f pH" % (float(L1*1*10**12)))
     print(" ")  
-    print("C2 = %f nF" % (float(C2*1000000000)))
-    print("L2 = %f uH" % (float(L2*1000000)))
+    print("C2 = %f pF" % (float(C2*1*10**12)))
+    print("L2 = %f pH" % (float(L2*1*10**12)))
     print(" ")  
-    print("C3 = %f nF" % (float(C3*1000000000)))
-    print("L3 = %f uH" % (float(L3*1000000)))
+    print("C3 = %f pF" % (float(C3*1*10**12)))
+    print("L3 = %f pH" % (float(L3*1*10**12)))
     
 def N4_BW(order, w0, BW, system_impedance):
     g1 = sheet_ranges['B31'].value
@@ -182,14 +182,14 @@ def N4_BW(order, w0, BW, system_impedance):
     print("                            |                                          ")
     print("                           GND                                         ")  
     print(" ")
-    print("C1 = %f nF" % (float(C1*1000000000)))
-    print("L1 = %f uH" % (float(L1*1000000)))
+    print("C1 = %f pF" % (float(C1*1*10**12)))
+    print("L1 = %f pH" % (float(L1*1*10**12)))
     print(" ")  
-    print("C2 = %f nF" % (float(C2*1000000000)))
-    print("L2 = %f uH" % (float(L2*1000000)))
+    print("C2 = %f pF" % (float(C2*1*10**12)))
+    print("L2 = %f pH" % (float(L2*1*10**12)))
     print(" ")  
-    print("C3 = %f nF" % (float(C3*1000000000)))
-    print("L3 = %f uH" % (float(L3*1000000)))
+    print("C3 = %f pF" % (float(C3*1*10**12)))
+    print("L3 = %f pH" % (float(L3*1*10**12)))
 
 
 def LP_inductor_denormalization(r0, w0, gk, BW):
