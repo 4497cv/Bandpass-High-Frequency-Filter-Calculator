@@ -1,5 +1,5 @@
-import butterworth
-    
+from butterworth import BP_BUTTERWORTH_FILTER
+
 def main():
     print("Introduce el orden 'N' del filtro: ")
     N = int(input());

@@ -9,7 +9,7 @@ def N2_BW(order, w0, BW, system_impedance):
     print("Filtro Butterworth, N = %i, fuente en serie" % order)
     print(" ")
     print("1. Especificaciones del filtro ")
-    print("BW = %f %" % BW*100)
+    print("BW = %f " % BW)
     print("r0 = %f ohm" % system_impedance)
     print("wo = 2*pi*f = %f rad/s" % w0)
     print(" ")
@@ -68,7 +68,7 @@ def N3_BW(order, w0, BW, system_impedance):
     print("Filtro Butterworth, N = %i, fuente en serie" % order)
     print(" ")      
     print("1. Especificaciones del filtro ")
-    print("BW = %f %" % BW*100)
+    print("BW = %f " % BW)
     print("r0 = %f ohm" % system_impedance)
     print("wo = 2*pi*f = %f rad/s" % w0)
     print(" ")  
@@ -134,7 +134,7 @@ def N4_BW(order, w0, BW, system_impedance):
     print("Filtro Butterworth, N = %i, fuente en serie" % order)
     print(" ")      
     print("1. Especificaciones del filtro ")
-    print("BW = %f %" % BW*100)
+    print("BW = %f " % BW)
     print("r0 = %f ohm" % system_impedance)
     print("wo = 2*pi*f = %f rad/s" % w0)
     print(" ")  
@@ -216,3 +216,5 @@ def BP_BUTTERWORTH_FILTER(order, BW, center_freq, system_impedance):
         N4_BW(order, w0, BW, system_impedance)
     else:
         print("invalid order (N)")
+
+        
