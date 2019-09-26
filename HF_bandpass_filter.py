@@ -3,13 +3,29 @@ from chebyshev_3db import BP_CHEBYSHEV_3DB_FILTER
 from chebyshev_0_5db import BP_CHEBYSHEV_0_5_DB_FILTER
 
 def main():
+
+    print("---------------------------------------------")
+    print("---------------------------------------------")
+    print("----------                        -----------")
+    print("----------    BANDPASS FILTER     -----------")
+    print("----------     CALCULATOR 1.0     -----------")
+    print("----------                        -----------")
+    print("---------------------------------------------")
+    print("---------------------------------------------")
+    print("")
+    
     valid = 0
     
     while(valid == 0):
-            print("Elige una opción (1,2,3):")
-            print("1. Butterworth ")
-            print("2. Chebyshev 0.5 dB")
-            print("2. Chebyshev 3.0 dB")
+            print("---------------------------------------------")
+            print("---------Elige una opción (1,2,3):-----------")
+            print("---------------------------------------------")
+            print("         1. Butterworth                 ")
+            print("         2. Chebyshev 0.5 dB            ")
+            print("         3. Chebyshev 3.0 dB            ")
+            print("---------------------------------------------")
+            print("---------------------------------------------")
+            
             select = int(input());
 
             if(1 == select):
